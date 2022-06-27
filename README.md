@@ -8,7 +8,7 @@
 ## 1. Menjalankan MySQL Server
 Untuk menjalankan MySQL Server dari menu XAMPP Control.
 
-![img1!](assets/img/1.0.PNG)
+![img1!](assets/img/8.1.PNG)
 
 ### Mengakses MySQL Client menggunakan PHP MyAdmin
 Pastikan webserver Apache dan MySQL server sudah dijalankan. Kemudian untuk mengakses direktory tersebut pada web server dengan mengakses URL : http://localhost/phpmyadmin/
@@ -16,37 +16,35 @@ Pastikan webserver Apache dan MySQL server sudah dijalankan. Kemudian untuk meng
 ## 2. Membuat Database: Studi Kasus Data Barang
 
 ### Membuat database
-![img2!](assets/img/1.1.PNG)
+![img2!](assets/img/8.2.PNG)
 
 ### Menambahkan Data
-![img3!](assets/img/1.2.PNG)
-
-![img4!](assets/img/1.3.PNG)
+![img3!](assets/img/8.3.PNG)
 
 ## 3. Membuat Program CRUD
 Buat folder lab8_php_database pada root directory web server (/Application/xampp/htdocs)
 
-![img4!](assets/img/2.0.PNG)
+![img4!](assets/img/8.4.PNG)
 
 Kemudian untuk mengakses direktory tersebut pada web server dengan mengakses URL:
 http://localhost/lab8_php_database/
 
-![img5!](assets/img/2.1.PNG)
+![img5!](assets/img/8.5.PNG)
 
 ## Membuat file koneksi database
 Buat file baru dengan nama koneksi.php
 
-![img6!](assets/img/2.2.PNG)
+![img6!](assets/img/8.6.PNG)
 
 Buka melalui browser untuk menguji koneksi database (untuk menyampilkan pesan koneksi berhasil, uncomment pada perintah echo “koneksi berhasil”;
 
-![img7!](assets/img/2.3.PNG)
+![img7!](assets/img/8.7.PNG)
 
 ## Membuat file index untuk menampilkan data (Read)
 Buat file baru dengan nama index.php
 
 Lalu masukan kode seperti dibawah :
-```
+```php
 <?php
 include("koneksi.php");
 
@@ -102,13 +100,13 @@ $result = mysqli_query($conn, $sql);
 </body>
 </html>
 ```
-![img8!](assets/img/index.PNG)
+![img8!](assets/img/8.8.PNG)
 
 ## Menambah Data (Create)
 Buat file baru dengan nama tambah.php
 
 Lalu masukan kode seperti dibawah :
-```
+```php
 <?php
 error_reporting(E_ALL);
 include_once 'koneksi.php';
@@ -189,13 +187,13 @@ if (isset($_POST['submit']))
 </body>
 </html>
 ```
-![img9!](assets/img/tambah-barang.PNG)
+![img9!](assets/img/8.9.PNG)
 
 ## Mengubah Data (Update)
 Buat file baru dengan nama ubah.php
 
 Lalu masukan kode seperti dibawah :
-```
+```php
 <?php
 error_reporting(E_ALL);
 include_once 'koneksi.php';
@@ -295,13 +293,13 @@ if (isset($_POST['submit']))
 </html>
 ```
 Sebelum diubah
-![img10!](assets/img/ubah1.PNG)
+![img10!](assets/img/8.10.PNG)
 
 Proses ubah
-![img11!](assets/img/ubah1.1.PNG)
+![img11!](assets/img/8.11.PNG)
 
 Setelah diubah
-![img12!](assets/img/ubah2.PNG)
+![img12!](assets/img/8.12.PNG)
 
 ## Menghapus Data (Delete)
 Buat file baru dengan nama hapus.php
@@ -318,7 +316,7 @@ header('location: index.php');
 ```
 
 Sebelum dihapus
-![img13!](assets/img/hapus1.PNG)
+![img13!](assets/img/8.13.PNG)
 
 Setelah dihapus
-![img14!](assets/img/hapus2.PNG)
+![img14!](assets/img/8.14.PNG)
